@@ -1,102 +1,21 @@
-**Read in other languages: [Русский](README.md), [Polska](README.pl.md).**
-
-# React homework template
-
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
-
-## Подготовка нового проекта
-
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Склонируй этот репозиторий.
-3. Измени имя папки с `react-homework-template` на имя своего проекта.
-4. Создай новый пустой репозиторий на GitHub.
-5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Установи базовые зависимости проекта командой `npm install`.
-7. Запусти режим разработки, выполнив команду `npm start`.
-8. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
-
-## Деплой
-
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
-
-![GitHub actions settings](./assets/actions-config-step-1.png)
-
-Пролистай страницу до последней секции, в которой выбери опции как на следующем
-изображении и нажми `Save`. Без этих настроек у сборки будет недостаточно прав
-для автоматизации процесса деплоя.
-
-![GitHub actions settings](./assets/actions-config-step-2.png)
-
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
-
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Статус деплоя
-
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
-
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеши в начале и конце строки
-обязательны.
-
-```jsx
-<BrowserRouter basename="/your_repo_name/">
-  <App />
-</BrowserRouter>
-```
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+<header><h1>Критерии приема</h1></header><p>Используй этот <a href="https://github.com/goitacademy/react-homework-template#readme" target="_blank" rel="noopener noreferrer">шаблон React-проекта</a> как стартовую точку своего приложения.</p><ul><li>Созданы репозитории <code>goit-react-hw-02-feedback</code> и
+<code>goit-react-hw-02-phonebook</code>.</li><li>При сдаче домашней работы есть две ссылки: на исходные файлы и рабочие
+страницы каждого задания на <code>GitHub Pages</code>.</li><li>При запуске кода задания, в консоли нету ошибок и предупреждений.</li><li>Для каждого компонента есть отдельный файл в папке <code>src/components</code>.</li><li>Для компонентов описаны <code>propTypes</code>.</li><li>Все что компонент ожидает в виде пропсов, передается ему при вызове.</li><li>JS-код чистый и понятный, используется <code>Prettier</code>.</li><li>Стилизация выполнена <code>CSS-модулями</code> или <code>Styled Components</code>.</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1---виджет-отзывов">1 - Виджет отзывов<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#1---%D0%B2%D0%B8%D0%B4%D0%B6%D0%B5%D1%82-%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2" title="Прямая ссылка на этот заголовок">​</a></h2><p>Как и большинство компаний, кафе Expresso собирает отзывы от своих клиентов.
+Твоя задача - создать приложение для сбора статистики. Есть всего три варианта
+обратной связи: хорошо, нейтрально и плохо.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-1">Шаг 1<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-1" title="Прямая ссылка на этот заголовок">​</a></h3><p>Приложение должно отображать количество собранных отзывов для каждой категории.
+Приложение не должно сохранять статистику отзывов между разными сессиями
+(обновление страницы).</p><p>Состояние приложения обязательно должно быть следующего вида, добавлять новые
+свойства нельзя.</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34; --prism-background-color:#f6f8fa;"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">state </span><span class="token operator" style="color: rgb(57, 58, 52);">=</span><span class="token plain"> </span><span class="token punctuation" style="color: rgb(57, 58, 52);">{</span><span class="token plain"></span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">  good: </span><span class="token number" style="color: rgb(54, 172, 170);">0</span><span class="token plain">,</span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">  neutral: </span><span class="token number" style="color: rgb(54, 172, 170);">0</span><span class="token plain">,</span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">  bad: </span><span class="token number" style="color: rgb(54, 172, 170);">0</span><span class="token plain"></span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain"></span><span class="token punctuation" style="color: rgb(57, 58, 52);">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>Интерфейс может выглядеть так.</p><img src="./step-1.png" alt="component preview" style="display:block;width:100%;margin-left:auto;margin-right:auto;margin-bottom:var(--ifm-leading);max-width:960px" class="medium-zoom-image"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-2">Шаг 2<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-2" title="Прямая ссылка на этот заголовок">​</a></h3><p>Расширь функционал приложения так, чтобы в интерфейсе отображалось больше
+статистики о собранных отзывах. Добавь отображение общего количества собранных
+отзывов из всех категорий и процент положительных отзывов. Для этого создай
+вспомогательные методы <code>countTotalFeedback()</code> и
+<code>countPositiveFeedbackPercentage()</code>, подсчитывающие эти значения основываясь на
+данных в состоянии (вычисляемые данные).</p><img src="./step-2.png" alt="component preview" style="display:block;width:100%;margin-left:auto;margin-right:auto;margin-bottom:var(--ifm-leading);max-width:960px" class="medium-zoom-image"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-3">Шаг 3<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-3" title="Прямая ссылка на этот заголовок">​</a></h3><p>Выполни рефакторинг приложения. Состояние приложения должно оставаться в
+корневом компоненте <code>&lt;App&gt;</code>.</p><ul><li>Вынеси отображение статистики в отдельный компонент
+<code>&lt;Statistics good={} neutral={} bad={} total={} positivePercentage={}&gt;</code>.</li><li>Вынеси блок кнопок в компонент
+<code>&lt;FeedbackOptions options={} onLeaveFeedback={}&gt;</code>.</li><li>Создай компонент <code>&lt;Section title=""&gt;</code>, который рендерит секцию с заголовком и
+детей (children). Оберни каждый из <code>&lt;Statistics&gt;</code> и <code>&lt;FeedbackOptions&gt;</code> в
+созданный компонент секции.</li></ul><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-4">Шаг 4<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-4" title="Прямая ссылка на этот заголовок">​</a></h3><p>Расширь функционал приложения так, чтобы блок статистики рендерился только после
+того, как был собран хотя бы один отзыв. Сообщение об отсутствиии статистики
+вынеси в компонент <code>&lt;Notification message="There is no feedback"&gt;</code>.</p><img src="./preview.gif" alt="component preview" style="display:block;width:100%;margin-left:auto;margin-right:auto;margin-bottom:var(--ifm-leading);max-width:960px" class="medium-zoom-image">
+</body></html>
