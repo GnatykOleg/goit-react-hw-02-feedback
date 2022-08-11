@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import s from './Feedback.module.css';
 
-import PropTypes from 'prop-types';
-
 export default class Feedback extends Component {
   state = {
     good: 0,
