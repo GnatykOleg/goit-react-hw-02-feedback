@@ -1,0 +1,39 @@
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.textG {
+  color: green;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.textN {
+  color: gray;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.textB {
+  color: red;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
