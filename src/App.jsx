@@ -6,24 +6,24 @@ import {
 } from './components';
 import React, { Component } from 'react';
 
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export default class App extends Component {
-  static defaultProps = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-    total: 0,
-    positivePercentage: 0,
-  };
+  // static defaultProps = {
+  //   good: 0,
+  //   neutral: 0,
+  //   bad: 0,
+  //   total: 0,
+  //   positivePercentage: 0,
+  // };
 
-  static propTypes = {
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    total: PropTypes.number.isRequired,
-    positivePercentage: PropTypes.number.isRequired,
-  };
+  // static propTypes = {
+  //   good: PropTypes.number.isRequired,
+  //   neutral: PropTypes.number.isRequired,
+  //   bad: PropTypes.number.isRequired,
+  //   total: PropTypes.number.isRequired,
+  //   positivePercentage: PropTypes.number.isRequired,
+  // };
 
   state = {
     good: this.props.good,
