@@ -13,8 +13,7 @@
 
 - Moved the block of buttons to the component
   <FeedbackOptions options={} onLeaveFeedback={}>.
-- Created a <Section title=""> component that renders a section with a title and
-  children (children). Wrapped each of <Statistics> and <FeedbackOptions> in
+- Created a Section title="" component that renders a section with a title and children (children). Wrapped each of <Statistics> and <FeedbackOptions> in
   created section component.
 
 #### 5. Expanded the functionality of the application so that the statistics block is rendered only after how at least one review was collected. Missing statistics message moved to the <Notification message="There is no feedback"> component.
