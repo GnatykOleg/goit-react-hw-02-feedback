@@ -1,21 +1,22 @@
-<header><h1>Критерии приема</h1></header><p>Используй этот <a href="https://github.com/goitacademy/react-homework-template#readme" target="_blank" rel="noopener noreferrer">шаблон React-проекта</a> как стартовую точку своего приложения.</p><ul><li>Созданы репозитории <code>goit-react-hw-02-feedback</code> и
-<code>goit-react-hw-02-phonebook</code>.</li><li>При сдаче домашней работы есть две ссылки: на исходные файлы и рабочие
-страницы каждого задания на <code>GitHub Pages</code>.</li><li>При запуске кода задания, в консоли нету ошибок и предупреждений.</li><li>Для каждого компонента есть отдельный файл в папке <code>src/components</code>.</li><li>Для компонентов описаны <code>propTypes</code>.</li><li>Все что компонент ожидает в виде пропсов, передается ему при вызове.</li><li>JS-код чистый и понятный, используется <code>Prettier</code>.</li><li>Стилизация выполнена <code>CSS-модулями</code> или <code>Styled Components</code>.</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1---виджет-отзывов">1 - Виджет отзывов<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#1---%D0%B2%D0%B8%D0%B4%D0%B6%D0%B5%D1%82-%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2" title="Прямая ссылка на этот заголовок">​</a></h2><p>Как и большинство компаний, кафе Expresso собирает отзывы от своих клиентов.
-Твоя задача - создать приложение для сбора статистики. Есть всего три варианта
-обратной связи: хорошо, нейтрально и плохо.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-1">Шаг 1<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-1" title="Прямая ссылка на этот заголовок">​</a></h3><p>Приложение должно отображать количество собранных отзывов для каждой категории.
-Приложение не должно сохранять статистику отзывов между разными сессиями
-(обновление страницы).</p><p>Состояние приложения обязательно должно быть следующего вида, добавлять новые
-свойства нельзя.</p><div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34; --prism-background-color:#f6f8fa;"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">state </span><span class="token operator" style="color: rgb(57, 58, 52);">=</span><span class="token plain"> </span><span class="token punctuation" style="color: rgb(57, 58, 52);">{</span><span class="token plain"></span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">  good: </span><span class="token number" style="color: rgb(54, 172, 170);">0</span><span class="token plain">,</span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">  neutral: </span><span class="token number" style="color: rgb(54, 172, 170);">0</span><span class="token plain">,</span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain">  bad: </span><span class="token number" style="color: rgb(54, 172, 170);">0</span><span class="token plain"></span><br></span><span class="token-line" style="color: rgb(57, 58, 52);"><span class="token plain"></span><span class="token punctuation" style="color: rgb(57, 58, 52);">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>Интерфейс может выглядеть так.</p><img src="./step-1.png" alt="component preview" style="display:block;width:100%;margin-left:auto;margin-right:auto;margin-bottom:var(--ifm-leading);max-width:960px" class="medium-zoom-image"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-2">Шаг 2<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-2" title="Прямая ссылка на этот заголовок">​</a></h3><p>Расширь функционал приложения так, чтобы в интерфейсе отображалось больше
-статистики о собранных отзывах. Добавь отображение общего количества собранных
-отзывов из всех категорий и процент положительных отзывов. Для этого создай
-вспомогательные методы <code>countTotalFeedback()</code> и
-<code>countPositiveFeedbackPercentage()</code>, подсчитывающие эти значения основываясь на
-данных в состоянии (вычисляемые данные).</p><img src="./step-2.png" alt="component preview" style="display:block;width:100%;margin-left:auto;margin-right:auto;margin-bottom:var(--ifm-leading);max-width:960px" class="medium-zoom-image"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-3">Шаг 3<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-3" title="Прямая ссылка на этот заголовок">​</a></h3><p>Выполни рефакторинг приложения. Состояние приложения должно оставаться в
-корневом компоненте <code>&lt;App&gt;</code>.</p><ul><li>Вынеси отображение статистики в отдельный компонент
-<code>&lt;Statistics good={} neutral={} bad={} total={} positivePercentage={}&gt;</code>.</li><li>Вынеси блок кнопок в компонент
-<code>&lt;FeedbackOptions options={} onLeaveFeedback={}&gt;</code>.</li><li>Создай компонент <code>&lt;Section title=""&gt;</code>, который рендерит секцию с заголовком и
-детей (children). Оберни каждый из <code>&lt;Statistics&gt;</code> и <code>&lt;FeedbackOptions&gt;</code> в
-созданный компонент секции.</li></ul><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="шаг-4">Шаг 4<a class="hash-link" href="https://goit.global/textbooks/lms-react-homework/v1/docs/hw-02/#%D1%88%D0%B0%D0%B3-4" title="Прямая ссылка на этот заголовок">​</a></h3><p>Расширь функционал приложения так, чтобы блок статистики рендерился только после
-того, как был собран хотя бы один отзыв. Сообщение об отсутствиии статистики
-вынеси в компонент <code>&lt;Notification message="There is no feedback"&gt;</code>.</p><img src="./preview.gif" alt="component preview" style="display:block;width:100%;margin-left:auto;margin-right:auto;margin-bottom:var(--ifm-leading);max-width:960px" class="medium-zoom-image">
-</body></html>
+# Testimonials widget
+
+#### 1. An application for collecting statistics has been created. There are only three options for the return connections: good, neutral, and bad.
+
+#### 2. The app displays the number of reviews collected for each category. The application does not save feedback statistics between different sessions (update pages). The state of the application is as follows: state = { good: 0, neutral: 0, bad: 0 }
+
+#### 3. Expanded the functionality of the application so that the interface displays more statistics about the collected reviews. Added display of the total number of collected reviews from all categories and the percentage of positive reviews. For This created the helper methods countTotalFeedback() and countPositiveFeedbackPercentage() which counts these values ​​based on data in the state (computed data).
+
+#### 4. The application has been refactored. The application state should remain in the root <App> component.
+
+- Moved the display of statistics to a separate component
+  <Statistics good={} neutral={} bad={} total={} positivePercentage={}>.
+
+- Moved the block of buttons to the component
+  <FeedbackOptions options={} onLeaveFeedback={}>.
+- Created a <Section title=""> component that renders a section with a title and
+  children (children). Wrapped each of <Statistics> and <FeedbackOptions> in
+  created section component.
+
+#### 5. Expanded the functionality of the application so that the statistics block is rendered only after how at least one review was collected. Missing statistics message moved to the <Notification message="There is no feedback"> component.
+
+![feedback](./public/feedback.jpg)
